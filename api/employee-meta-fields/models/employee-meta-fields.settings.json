@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employee_meta_fields",
+  "info": {
+    "name": "EmployeeMetaFields",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "field_name": {
+      "type": "string"
+    },
+    "employee_meta_data": {
+      "via": "employeemetafield_id",
+      "collection": "employee-meta-data"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employee_meta_data",
+  "info": {
+    "name": "EmployeeMetaData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "employee_id": {
+      "via": "employee_meta_data",
+      "collection": "employees",
+      "dominant": true
+    },
+    "employeemetafield_id": {
+      "collection": "employee-meta-fields",
+      "via": "employee_meta_data",
+      "dominant": true
+    },
+    "content": {
+      "type": "text"
+    },
+    "empid": {
+      "type": "integer"
+    },
+    "empMfId": {
+      "type": "integer"
+    },
+    "field_name": {
+      "type": "string"
+    }
+  }
+}

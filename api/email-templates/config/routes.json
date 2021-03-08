@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/email-templates",
+      "handler": "email-templates.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-templates/count",
+      "handler": "email-templates.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-templates/:id",
+      "handler": "email-templates.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/email-templates",
+      "handler": "email-templates.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/email-templates/:id",
+      "handler": "email-templates.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/email-templates/:id",
+      "handler": "email-templates.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slack_schedules",
+  "info": {
+    "name": "SlackSchedules",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "emailtemplate_id": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "timezone": {
+      "type": "text"
+    },
+    "time": {
+      "type": "string"
+    },
+    "contactlist_id": {
+      "type": "integer"
+    }
+  }
+}

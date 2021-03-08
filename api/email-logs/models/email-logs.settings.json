@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_logs",
+  "info": {
+    "name": "EmailLogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "subject": {
+      "type": "text"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "text"
+    },
+    "datesent": {
+      "type": "datetime"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

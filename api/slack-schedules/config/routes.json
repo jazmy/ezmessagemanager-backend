@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/slack-schedules",
+      "handler": "slack-schedules.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slack-schedules/count",
+      "handler": "slack-schedules.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slack-schedules/:id",
+      "handler": "slack-schedules.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/slack-schedules",
+      "handler": "slack-schedules.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/slack-schedules/:id",
+      "handler": "slack-schedules.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/slack-schedules/:id",
+      "handler": "slack-schedules.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

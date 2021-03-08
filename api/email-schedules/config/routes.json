@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/email-schedules",
+      "handler": "email-schedules.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-schedules/count",
+      "handler": "email-schedules.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-schedules/:id",
+      "handler": "email-schedules.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/email-schedules",
+      "handler": "email-schedules.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/email-schedules/:id",
+      "handler": "email-schedules.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/email-schedules/:id",
+      "handler": "email-schedules.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

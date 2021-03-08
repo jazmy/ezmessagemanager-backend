@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_lists",
+  "info": {
+    "name": "contact-list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "query": {
+      "type": "text"
+    }
+  }
+}

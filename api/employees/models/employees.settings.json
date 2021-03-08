@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employees",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "hiredate": {
+      "type": "date"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "employees"
+    },
+    "employee_meta_data": {
+      "collection": "employee-meta-data",
+      "via": "employee_id"
+    },
+    "employeeMetaData": {
+      "type": "json"
+    }
+  }
+}

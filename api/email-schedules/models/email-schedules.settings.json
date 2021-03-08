@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_schedules",
+  "info": {
+    "name": "EmailSchedules",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contactlist_id": {
+      "type": "biginteger"
+    },
+    "emailtemplate_id": {
+      "type": "biginteger"
+    },
+    "date": {
+      "type": "date"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "timezone": {
+      "type": "text"
+    },
+    "time": {
+      "type": "string"
+    }
+  }
+}

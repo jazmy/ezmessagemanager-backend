@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_templates",
+  "info": {
+    "name": "EmailTemplates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "shortmessage": {
+      "type": "text"
+    },
+    "longmessage": {
+      "type": "text"
+    },
+    "templatename": {
+      "type": "string"
+    },
+    "templatedesign": {
+      "type": "text"
+    }
+  }
+}
